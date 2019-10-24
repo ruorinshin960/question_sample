@@ -3,7 +3,7 @@
 ruby 2.5.1
 Rails 5.2.3
 
-# README DB設計 
+# DB設計 
 
 ## usersテーブル
 
