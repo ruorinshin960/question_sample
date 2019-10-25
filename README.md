@@ -15,6 +15,31 @@ Rails 5.2.3
 ### Association
 - has_many :posts
 - has_many :comments
+- has_many :groups, through: :group_users
+- has_many :group_users
+
+## groupsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|group_name|string|null: false, unipue: true|
+
+### Association
+- has_many :users, through: :group_users
+- has_many :group_users
+- has_many :posts
+
+
+## groups_usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :user
 
 ## postsテーブル
 
