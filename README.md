@@ -13,7 +13,7 @@ Rails 5.2.3
 |mail|string|null: false, unipue: true|
 
 ### Association
-- has_many :posts
+- has_many :articles
 - has_many :comments
 - has_many :groups, through: :group_users
 - has_many :group_users
@@ -27,7 +27,7 @@ Rails 5.2.3
 ### Association
 - has_many :users, through: :group_users
 - has_many :group_users
-- has_many :posts
+- has_many :articles
 
 
 ## groups_usersテーブル
@@ -41,7 +41,7 @@ Rails 5.2.3
 - belongs_to :group
 - belongs_to :user
 
-## postsテーブル
+## articlesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -63,5 +63,5 @@ Rails 5.2.3
 |post_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :post
+- belongs_to :article
 - belongs_to :user
