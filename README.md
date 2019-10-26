@@ -45,7 +45,7 @@ Rails 5.2.3
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false,index: true|
+|text|text|null: false,index: true|
 |image|string|null: true|
 |user_id|integer|foreign_key: true|
 
@@ -57,10 +57,10 @@ Rails 5.2.3
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|text|text|null: false|
 |image|string|null: true|
 |user_id|integer|null: false, foreign_key: true|
-|post_id|integer|null: false, foreign_key: true|
+|article_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :article
